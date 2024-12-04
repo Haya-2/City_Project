@@ -40,7 +40,7 @@
   margin: 0em;
   margin-left: 3em;
   padding: 0.2em;
-  background-color: #64d1b8;
+  background-color: #3eba9d;
 }
 
 .btn {
@@ -101,7 +101,7 @@ main {
 
 nav {
   padding-top: 10px;
-  background: #f1556a;
+  background: #f14e64;
   height: 4em;
   width: 100%;
   position: fixed;
@@ -140,7 +140,7 @@ nav ul {
   color: #f7f7f7;
 }
 .liennav:hover {
-  color: #64d1b8;
+  color: #3eba9d;
 }
 
 li {
@@ -155,7 +155,7 @@ li {
 article {
   width: 20%;
   min-width: 250px;
-  height: 16em;
+  height: 15em;
   position: sticky;
   top: 4em; /* Positionner sous la barre de navigation */
   background: #fac2ca;
@@ -170,17 +170,17 @@ article ul {
 article ul li {
   margin: 10px 0;
   font-size: 1em;
-  color: #f1556a;
+  color: #f36e7f;
   text-decoration: underline;
 }
 article ul li:hover {
-  color: #64d1b8;
+  color: #3eba9d;
   cursor: pointer;
   margin-left: 0.5em;
 }
 article .titre h2 {
   font-size: 1.2em;
-  color: #64d1b8;
+  color: #3eba9d;
   margin-bottom: 10px;
 }
 
@@ -204,12 +204,12 @@ section.prod {
 }
 
 .bgparentbis {
-  background: #3dc5a6;
+  background: #31947d;
 }
 
 .titre h2 {
   font-size: 1.5em;
-  color: #f1556a;
+  color: #f14e64;
   margin: 0;
   padding: 0;
   text-decoration: underline;
@@ -234,9 +234,15 @@ section.prod {
   width: max-content;
 }
 
-.flex-box {
+.flex-box-4 {
   display: flex;
   flex-wrap: wrap;
+}
+
+.flex-box-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .flex-elements-4 {
@@ -246,6 +252,14 @@ section.prod {
   text-align: center;
 }
 
+.flex-elements-2 {
+  width: 50%;
+}
+.flex-elements-2 img {
+  max-height: 20em;
+  width: fit-content;
+}
+
 @media (max-width: 1000px) {
   .flex-elements-4 {
     width: 50%;
@@ -253,8 +267,8 @@ section.prod {
 }
 /* Footer */
 footer {
-  background: #64d1b8;
-  color: #fac2ca;
+  background: #3eba9d;
+  color: #f14e64;
   padding: 20px;
   text-align: center;
 }

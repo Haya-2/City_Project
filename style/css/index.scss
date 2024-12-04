@@ -106,7 +106,7 @@ article {
         li {
             margin: 10px 0;
             font-size: 1em;
-            color: $rosemid;
+            color: $rosel;
             text-decoration: underline;
 
             &:hover {
@@ -177,15 +177,29 @@ section.prod {
     }
 }
 
-.flex-box {
+.flex-box-4 {
     display: flex;
     flex-wrap: wrap;
 }
+.flex-box-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .flex-elements-4 {
     width: 25%;
 
     h1 {
         text-align: center;
+    }
+}
+
+.flex-elements-2 {
+    width: 50%;
+    img {
+        max-height: 20em;
+        width: fit-content;
     }
 }
 
@@ -198,7 +212,7 @@ section.prod {
 /* Footer */
 footer {
     background: $turquoise;
-    color: $rosepastel;
+    color: $rosemid;
     padding: 20px;
     text-align: center;
 
