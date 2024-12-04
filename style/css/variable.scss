@@ -82,3 +82,13 @@ $fond: #c7f1ed8c;
         #f02eaa4d 10px 10px,
         #f02eaa33 15px 15px;
 }
+
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
