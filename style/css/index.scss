@@ -47,6 +47,7 @@ nav {
     img {
         z-index: 3;
         position: absolute;
+        left: 0.5em;
         height: 3em;
         padding: 0;
     }
@@ -100,7 +101,7 @@ nav ul {
     justify-content: right;
     list-style: none;
     li {
-        min-width: 4em;
+        min-width: 5em;
     }
 }
 .liennav {
@@ -365,7 +366,7 @@ footer {
     }
     .navbar.active {
         display: flex; 
-        animation: slideIn 0.3s ease;
+        animation: slideIn 0.3s cubic-bezier(0, 0.5, 0.1, 1);
     }
     .flex-elements-4 {
         text-align: center;
