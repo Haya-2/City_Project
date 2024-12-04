@@ -1,0 +1,334 @@
+@charset "UTF-8";
+@import url("fontawesome-all.min.css");
+@font-face {
+  font-family: "Stars";
+  src: url(Stars.ttf) format("truetype");
+}
+@font-face {
+  font-family: "AutoShel";
+  src: url(Authentic_Sheldon.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Afterglow";
+  src: url(Afterglow_Regular.ttf) format("truetype");
+}
+.inputGroup {
+  margin: 1.1em 0 0.5em 0;
+  position: relative;
+}
+
+.inputGroup input, textarea {
+  font-size: 100%;
+  padding: 0.5em;
+  padding-left: 1em;
+  outline: none;
+  border: 2px solid #f36e7f;
+  background-color: transparent;
+  border-radius: 20px;
+}
+.inputGroup input:hover, textarea:hover {
+  border-color: #fac2ca;
+}
+.inputGroup input:focus, textarea:focus {
+  border-color: #ff2643;
+}
+
+.inputGroup label {
+  display: block;
+  position: absolute;
+  transform: translateY(-190%) scale(1);
+  margin: 0em;
+  margin-left: 3em;
+  padding: 0.2em;
+  background-color: #64d1b8;
+}
+
+.btn {
+  padding: 0.5em 1.5em;
+  font-weight: 700;
+  background: #f7f7f7;
+  color: #a442ff;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border-bottom: 2px solid #a442ff;
+  border-right: 2px solid #a442ff;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  transition-duration: 1s;
+  transition-property: border-top, border-left, border-bottom, border-right, box-shadow;
+}
+
+.btn:hover {
+  border-top: 2px solid #a442ff;
+  border-left: 2px solid #a442ff;
+  border-bottom: 2px solid #f36e7f;
+  border-right: 2px solid #f36e7f;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3019607843) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+}
+
+/*Déclarations générales des pages*/
+html body {
+  padding: 0;
+  margin: 0;
+  height: 250%;
+  background: rgba(199, 241, 237, 0.5490196078);
+  color: #333333;
+  font-family: "Stars", cursive;
+}
+
+a {
+  color: #f7f7f7;
+}
+a:hover {
+  color: #f36e7f;
+}
+
+p {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  display: flex;
+  margin-top: 4.5em; /* Éviter la superposition avec la barre de navigation */
+  gap: 20px; /* Espacement entre les colonnes */
+}
+
+nav {
+  padding-top: 10px;
+  background: #f1556a;
+  height: 4em;
+  width: 100%;
+  position: fixed;
+  flex-direction: row;
+  z-index: 2;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  list-style-type: none;
+  float: none;
+  justify-content: space-between;
+}
+.navbar img {
+  height: 3em;
+  padding: 0;
+  margin: -1em;
+}
+
+nav ul {
+  display: flex;
+  float: right;
+  flex-direction: row;
+  justify-content: right;
+  list-style: none;
+}
+
+.liennav {
+  cursor: pointer;
+  margin: 20px;
+  margin-right: 45px;
+  font-size: larger;
+  color: #f7f7f7;
+}
+.liennav:hover {
+  color: #64d1b8;
+}
+
+li {
+  list-style: none;
+}
+
+.passous {
+  text-decoration: none;
+}
+
+/* Article avec menu statique */
+article {
+  width: 20%;
+  min-width: 250px;
+  height: 16em;
+  position: sticky;
+  top: 4em; /* Positionner sous la barre de navigation */
+  background: #fac2ca;
+  padding: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+article ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+article ul li {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #f1556a;
+  text-decoration: underline;
+}
+article ul li:hover {
+  color: #64d1b8;
+  cursor: pointer;
+  margin-left: 0.5em;
+}
+article .titre h2 {
+  font-size: 1.2em;
+  color: #64d1b8;
+  margin-bottom: 10px;
+}
+
+/* Section principale */
+section.prod {
+  width: 80%;
+  padding: 20px;
+  background: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bgparent {
+  position: relative;
+  width: 100%;
+  top: 4.5em;
+  color: #ff2643;
+  background-image: url("../../image/Mairie_Croissy_Beaubourg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.bgparentbis {
+  background: #3dc5a6;
+}
+
+.titre h2 {
+  font-size: 1.5em;
+  color: #f1556a;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.centre {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  background-color: rgba(233, 233, 233, 0.75);
+}
+.centre h2 {
+  font-size: 2em;
+  margin: 20px 0;
+}
+.centre p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  width: max-content;
+}
+
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-elements-4 {
+  width: 25%;
+}
+.flex-elements-4 h1 {
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .flex-elements-4 {
+    width: 50%;
+  }
+}
+/* Footer */
+footer {
+  background: #64d1b8;
+  color: #fac2ca;
+  padding: 20px;
+  text-align: center;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  padding-bottom: 10px;
+}
+footer .footer-container .links {
+  margin: 0;
+  padding: 0;
+}
+footer section {
+  flex: 1;
+  text-align: center;
+  max-width: 33%;
+}
+footer form {
+  width: 100%;
+}
+footer form input, footer form textarea {
+  width: 75%;
+  color: #f7f7f7;
+}
+footer form input::placeholder, footer form textarea::placeholder {
+  color: #b0f0e1;
+}
+footer form textarea {
+  font-size: 110%;
+}
+footer .menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 10px 0;
+}
+footer .menu li {
+  margin: 0 15px;
+}
+footer .icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 10px 0;
+  padding-bottom: 10px;
+}
+footer .icons li {
+  margin: 0 10px;
+}
+footer .icons li a {
+  text-decoration: none;
+}
+footer .copyright {
+  color: #f7f7f7;
+}
+
+/* Media query pour petits écrans */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Les sections s'empilent en vertical */
+    text-align: center;
+  }
+  section {
+    max-width: 100%; /* Occupe toute la largeur */
+    padding: 10px 0;
+  }
+  .flex-elements-4 {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

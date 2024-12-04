@@ -1,0 +1,287 @@
+@import "variable.scss";
+@import url("fontawesome-all.min.css");
+
+/*Déclarations générales des pages*/
+html {
+    body {
+        padding: 0;
+        margin: 0;
+        height: 250%;
+        background: $fond;
+        color: $darker;
+        font-family: "Stars", cursive;
+    }
+}
+
+a {
+    color: $lighter;
+    &:hover {
+        color: $rosel;
+    }
+}
+
+p {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    display: flex;
+    margin-top: 4.5em; /* Éviter la superposition avec la barre de navigation */
+    gap: 20px; /* Espacement entre les colonnes */
+}
+
+nav {
+    padding-top: 10px;
+    background: $rosemid;
+    height: 4em;
+    width: 100%;
+    position: fixed;
+    flex-direction: row;
+    z-index: 2;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    list-style-type: none;
+    float: none;
+    justify-content: space-between;
+    img {
+        height: 3em;
+        padding: 0;
+        margin: -1em;
+    }
+}
+
+nav ul {
+    display: flex;
+    float: right;
+    flex-direction: row;
+    justify-content: right;
+    list-style: none;
+}
+.liennav {
+    cursor: pointer;
+    margin: 20px;
+    margin-right: 45px;
+    font-size: larger;
+    color: $lighter;
+    &:hover {
+        color: $turquoise;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+.passous {
+    text-decoration: none;
+}
+
+/* Article avec menu statique */
+article {
+    width: 20%;
+    min-width: 250px;
+    height: 15em;
+    position: sticky;
+    top: 4em; /* Positionner sous la barre de navigation */
+    background: $rosepastel;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+
+    ul {
+        padding: 0;
+        list-style: none;
+        margin: 0;
+
+        li {
+            margin: 10px 0;
+            font-size: 1em;
+            color: $rosemid;
+            text-decoration: underline;
+
+            &:hover {
+                color: $turquoise;
+                cursor: pointer;
+                margin-left: 0.5em;
+            }
+        }
+    }
+    .titre h2 {
+        font-size: 1.2em;
+        color: $turquoise;
+        margin-bottom: 10px;
+    }
+
+}
+
+/* Section principale */
+section.prod {
+    width: 80%;
+    padding: 20px;
+    background: $lighter;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bgparent {
+    position: relative;
+    width: 100%;
+    top: 4.5em;
+    color: $rouge;
+    background-image: url("../../image/Mairie_Croissy_Beaubourg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center; 
+}
+
+.bgparentbis {
+    background: darken($turquoise, 10%);
+}
+
+.titre h2 {
+    font-size: 1.5em;
+    color: $rosemid;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.centre {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;    
+    background-color: rgba(233, 233, 233, 0.75);
+
+
+    h2 {
+        font-size: 2em;
+        margin: 20px 0;
+    }
+
+    p {
+        font-size: 1.2em;
+        line-height: 1.5;
+        width: max-content;
+    }
+}
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-elements-4 {
+    width: 25%;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .flex-elements-4 {
+        width: 50%;
+    }
+}
+
+/* Footer */
+footer {
+    background: $turquoise;
+    color: $rosepastel;
+    padding: 20px;
+    text-align: center;
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        align-content: center;
+        padding-bottom: 10px;
+        .links {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    section {
+        flex: 1;
+        text-align: center;
+        max-width: 33%;
+    }
+
+    form {
+        width: 100%;
+
+        input, textarea {
+            width: 75%;
+            color: $lighter;
+            &::placeholder {
+                color: $light;
+            }
+        }
+        textarea {
+            font-size: 110%;
+        }
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 10px 0;
+
+        li {
+            margin: 0 15px;
+        }
+    }
+
+    .icons {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 10px 0;
+        padding-bottom: 10px;
+
+        li {
+            margin: 0 10px;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .copyright {
+        color: $lighter;
+    }
+}
+
+/* Media query pour petits écrans */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Les sections s'empilent en vertical */
+        text-align: center;
+    }
+
+    section {
+        max-width: 100%; /* Occupe toute la largeur */
+        padding: 10px 0;
+    }
+
+    .flex-elements-4 {
+        width: 100%;
+    }
+}
