@@ -210,12 +210,15 @@ article ul {
   margin: 0;
 }
 article ul li {
+  padding: 0.3em;
+}
+article ul li a {
   margin: 10px 0;
   font-size: 1em;
   color: #f36e7f;
   text-decoration: underline;
 }
-article ul li:hover {
+article ul li a:hover {
   color: #3eba9d;
   cursor: pointer;
   margin-left: 0.5em;
