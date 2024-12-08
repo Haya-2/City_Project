@@ -235,16 +235,29 @@ section.prod {
 }
 
 .flex-elements-2 {
-    width: 50%;
+    width: 49%;
     display: flex;
+    min-height: max-content;
     justify-content: center;
     flex-wrap: wrap;
+    border-bottom: 3px solid $turquoise;
+    //border-bottom-color: $btnText;
     img {
         max-height: 20em;
         max-width: 20em;
         width: fit-content;
     }
+    .icon {
+        color: $btnText;
+        display: grid;
+        justify-items: center;
+    }
+    
+    /*&:nth-child(even) {
+        background-color: $rosepastel;
+    }*/
 }
+
 
 @media (max-width: 1000px) {
     .flex-elements-4 {
@@ -253,6 +266,16 @@ section.prod {
     
     .flex-elements-2 {
         width: 100%;
+        display: flow-root;
+        &:last-child {
+            border-bottom: none;
+        }
+        &:nth-child(odd) {
+            border-right: 3px solid $turquoise;
+        }
+        &:nth-child(even) {
+            border-left: 3px solid $turquoise;
+        }
     }
 }
 

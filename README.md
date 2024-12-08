@@ -44,6 +44,20 @@ Empty
 #### Folder webfonts  
 All the font needed by fontawesome-all.min.css file.
 
+## Finished Pages  
+- Index  
+- News  
+- Services  
+
+## ToDo Pages  
+- Visits  
+- Jobs enlistments  
+- Church  
+- Town Hall  
+- Activities  
+- Numbers  
+- Contact (?)  
+
 
 ## Future Enhancements
 All the "PAGES/" visual and data.
