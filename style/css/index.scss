@@ -250,11 +250,16 @@ section.prod {
 .flex-box-2 {
     display: flex;
     flex-wrap: wrap;
-    //align-items: center;
+    justify-content: space-around;
     p {
         width: 100%;
     }
 }
+.titrage {
+    display: flex;
+    justify-content: center;
+}
+
 
 .flex-elements-4 {
     width: 22%;
@@ -292,16 +297,21 @@ section.prod {
     }
 }
 .service .flex-elements-2, .jobs .flex-elements-2 {
-    border-top: 3px solid $turquoise;
-    border-bottom: 3px solid $turquoise;
+    //border-top: 3px solid $turquoise;
+    //border-bottom: 3px solid $turquoise;
     padding: 0.5em;
     &:nth-child(odd) {
         border-right: 3px solid $turquoise;
-        padding: 0.5em;
     }
 }
-.visits  .flex-elements-2 {
+.visits .flex-elements-2 {
     border-bottom: 3px solid $turquoise;
+}
+
+.town_hall .flex-elements-4, .town_hall .flex-elements-2, .town_hall .flex-elements-1 {
+    //border-bottom: 3px solid $turquoise;
+    border-right: 3px solid $turquoise;
+    padding: 0.5em;
 }
 
 .town_hall ul {
@@ -315,10 +325,13 @@ section.prod {
 
 @media (max-width: 1000px) {
     .flex-elements-4 {
-        width: 46%;
+        width: 45%;
     }
     .flex-elements-2 { 
         width: 98%;
+    }
+    .town_hall .flex-elements-2 {
+        width: 45%;
     }
     .service .flex-elements-2, .jobs .flex-elements-2 {
         display: flow-root;
@@ -432,6 +445,12 @@ footer {
 
     .flex-elements-4 {
         width: 100%;
+    }
+    .town_hall .flex-elements-2 {
+        width: 98%;
+    }
+    .town_hall .flex-elements-4, .town_hall .flex-elements-2, .town_hall .flex-elements-1 {
+        border-right: none;
     }
 }
 

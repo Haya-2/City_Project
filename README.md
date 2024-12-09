@@ -50,10 +50,10 @@ All the font needed by fontawesome-all.min.css file.
 - Services  
 - Visits  
 - Jobs enlistments  
+- Town Hall  
 
 ## ToDo Pages  
 - Church  
-- Town Hall  
 - Activities  
 - Numbers  
 - Contact (?)  
