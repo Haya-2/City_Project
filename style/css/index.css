@@ -85,10 +85,10 @@ html body {
 }
 
 a {
-  color: #f7f7f7;
+  color: #f36e7f;
 }
 a:hover {
-  color: #f36e7f;
+  color: #3eba9d;
 }
 
 p {
@@ -305,6 +305,7 @@ section.prod {
 .flex-box-4 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .flex-box-2 {
@@ -314,15 +315,10 @@ section.prod {
 .flex-box-2 p {
   width: 100%;
 }
-.flex-box-2 a {
-  color: #f36e7f;
-}
-.flex-box-2 a:hover {
-  color: #3eba9d;
-}
 
 .flex-elements-4 {
-  width: 25%;
+  width: 22%;
+  padding: 0.5em;
 }
 .flex-elements-4 h1 {
   text-align: center;
@@ -370,12 +366,20 @@ section.prod {
   border-bottom: 3px solid #3eba9d;
 }
 
+.town_hall ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.town_hall ul li {
+  min-width: 5em;
+}
+
 @media (max-width: 1000px) {
   .flex-elements-4 {
-    width: 50%;
+    width: 46%;
   }
   .flex-elements-2 {
-    width: 100%;
+    width: 98%;
   }
   .service .flex-elements-2, .jobs .flex-elements-2 {
     display: flow-root;
@@ -400,6 +404,12 @@ footer {
   color: #f14e64;
   padding: 20px;
   text-align: center;
+}
+footer a {
+  color: #f7f7f7;
+}
+footer a:hover {
+  color: #f36e7f;
 }
 footer .footer-container {
   display: flex;
