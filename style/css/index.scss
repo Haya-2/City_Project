@@ -463,7 +463,10 @@ footer {
     .burger-container, #burger-menu, .burger {
         display: block;
     }
-    .navbar, .navbarbis {
+    .navbar {
+        display: none;
+    }
+    .navbarbis {
         display: none;
         flex-direction: column;
         top: -0.8em;

@@ -515,7 +515,10 @@ footer .copyright {
   .burger-container, #burger-menu, .burger {
     display: block;
   }
-  .navbar, .navbarbis {
+  .navbar {
+    display: none;
+  }
+  .navbarbis {
     display: none;
     flex-direction: column;
     top: -0.8em;
@@ -524,7 +527,7 @@ footer .copyright {
     background: #f14e64;
     box-shadow: 0 2px 0px rgba(62, 186, 157, 0.5);
   }
-  .navbar li, .navbarbis li {
+  .navbarbis li {
     width: 100%;
     margin: 0;
     padding: 1em 0;
