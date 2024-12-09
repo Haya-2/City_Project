@@ -113,6 +113,10 @@ nav {
     float: none;
     justify-content: space-between;
 }
+.navbarbis {
+    position: relative;
+    display: none;
+}
 
 
 
@@ -459,14 +463,13 @@ footer {
     .burger-container, #burger-menu, .burger {
         display: block;
     }
-    .navbar {
+    .navbar, .navbarbis {
         display: none;
         flex-direction: column;
-        top: -0.5em;
+        top: -0.8em;
         left: 0;
         width: 100%;
         background: $rosemid;
-        padding: 10px 0;
         box-shadow: 0 2px 0px rgba(62, 186, 157, 0.5);
         li {
             width: 100%;
@@ -475,7 +478,10 @@ footer {
             text-align: center;
         }
     }
-    .navbar.active {
+    .liennav {
+        margin: 0;
+    }
+    .navbarbis.active {
         display: flex; 
         animation: slideIn 0.3s cubic-bezier(0, 0.5, 0.1, 1);
     }
