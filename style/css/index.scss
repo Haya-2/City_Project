@@ -224,6 +224,9 @@ section.prod {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    p {
+        width: 100%;
+    }
 }
 
 .flex-elements-4 {
@@ -240,7 +243,6 @@ section.prod {
     min-height: max-content;
     justify-content: center;
     flex-wrap: wrap;
-    border-bottom: 3px solid $turquoise;
     //border-bottom-color: $btnText;
     img {
         max-height: 20em;
@@ -252,10 +254,12 @@ section.prod {
         display: grid;
         justify-items: center;
     }
-    
     /*&:nth-child(even) {
         background-color: $rosepastel;
     }*/
+}
+.service .flex-elements-2 {
+    border-bottom: 3px solid $turquoise;
 }
 
 
@@ -263,10 +267,12 @@ section.prod {
     .flex-elements-4 {
         width: 50%;
     }
-    
-    .flex-elements-2 {
+    .flex-elements-2 { 
         width: 100%;
+    }
+    .service .flex-elements-2 {
         display: flow-root;
+        border-bottom: 3px solid $turquoise;
         &:last-child {
             border-bottom: none;
         }
