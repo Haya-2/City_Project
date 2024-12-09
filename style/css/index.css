@@ -287,10 +287,15 @@ section.prod {
 .flex-box-2 {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 }
 .flex-box-2 p {
   width: 100%;
+}
+.flex-box-2 a {
+  color: #f36e7f;
+}
+.flex-box-2 a:hover {
+  color: #3eba9d;
 }
 
 .flex-elements-4 {
@@ -321,7 +326,21 @@ section.prod {
   justify-items: center;
 }
 
+.flex-elements-1 {
+  width: 99%;
+}
+.flex-elements-1 .icon {
+  color: #a442ff;
+}
+
 .service .flex-elements-2 {
+  border-bottom: 3px solid #3eba9d;
+}
+.service .flex-elements-2:nth-child(odd) {
+  border-right: 3px solid #3eba9d;
+}
+
+.visits .flex-elements-2 {
   border-bottom: 3px solid #3eba9d;
 }
 

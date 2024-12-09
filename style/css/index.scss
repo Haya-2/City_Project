@@ -223,9 +223,15 @@ section.prod {
 .flex-box-2 {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    //align-items: center;
     p {
         width: 100%;
+    }
+    a {
+        color: $rosel;
+        &:hover {
+            color: $turquoise;
+        }
     }
 }
 
@@ -258,7 +264,19 @@ section.prod {
         background-color: $rosepastel;
     }*/
 }
+.flex-elements-1 {
+    width: 99%;
+    .icon {
+        color: $btnText;
+    }
+}
 .service .flex-elements-2 {
+    border-bottom: 3px solid $turquoise;
+    &:nth-child(odd) {
+        border-right: 3px solid $turquoise;
+    }
+}
+.visits  .flex-elements-2 {
     border-bottom: 3px solid $turquoise;
 }
 
