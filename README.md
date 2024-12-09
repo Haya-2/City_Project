@@ -52,9 +52,9 @@ All the font needed by fontawesome-all.min.css file.
 - Jobs enlistments  
 - Town Hall  
 - Numbers  
+- History  
 
 ## ToDo Pages  
-- History  
 - Activities  
 - Contact (?)  
 
