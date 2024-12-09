@@ -51,11 +51,11 @@ All the font needed by fontawesome-all.min.css file.
 - Visits  
 - Jobs enlistments  
 - Town Hall  
+- Numbers  
 
 ## ToDo Pages  
 - Church  
 - Activities  
-- Numbers  
 - Contact (?)  
 
 

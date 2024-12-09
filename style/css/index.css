@@ -313,7 +313,7 @@ section.prod {
   width: max-content;
 }
 
-.flex-box-4 {
+.flex-box-4, .flex-box-3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -338,6 +338,14 @@ section.prod {
   padding: 0.5em;
 }
 .flex-elements-4 h1 {
+  text-align: center;
+}
+
+.flex-elements-3 {
+  width: 30%;
+  padding: 0.5em;
+}
+.flex-elements-3 h1 {
   text-align: center;
 }
 
@@ -401,33 +409,6 @@ section.prod {
   min-width: 5em;
 }
 
-@media (max-width: 1000px) {
-  .flex-elements-4 {
-    width: 45%;
-  }
-  .flex-elements-2 {
-    width: 98%;
-  }
-  .town_hall .flex-elements-2 {
-    width: 45%;
-  }
-  .service .flex-elements-2, .jobs .flex-elements-2 {
-    display: flow-root;
-    border-bottom: 3px solid #3eba9d;
-  }
-  .service .flex-elements-2:last-child, .jobs .flex-elements-2:last-child {
-    border-bottom: none;
-  }
-  .service .flex-elements-2:first-child, .jobs .flex-elements-2:first-child {
-    border-top: none;
-  }
-  .service .flex-elements-2:nth-child(odd), .jobs .flex-elements-2:nth-child(odd) {
-    border-right: 3px solid #3eba9d;
-  }
-  .service .flex-elements-2:nth-child(even), .jobs .flex-elements-2:nth-child(even) {
-    border-left: 3px solid #3eba9d;
-  }
-}
 /* Footer */
 footer {
   background: #3eba9d;
@@ -498,6 +479,37 @@ footer .copyright {
   color: #f7f7f7;
 }
 
+/***** MEDIA QUERYS *****/
+@media (max-width: 1000px) {
+  .flex-elements-4 {
+    width: 45%;
+  }
+  .flex-elements-3 {
+    width: 45%;
+  }
+  .flex-elements-2 {
+    width: 98%;
+  }
+  .town_hall .flex-elements-2 {
+    width: 45%;
+  }
+  .service .flex-elements-2, .jobs .flex-elements-2 {
+    display: flow-root;
+    border-bottom: 3px solid #3eba9d;
+  }
+  .service .flex-elements-2:last-child, .jobs .flex-elements-2:last-child {
+    border-bottom: none;
+  }
+  .service .flex-elements-2:first-child, .jobs .flex-elements-2:first-child {
+    border-top: none;
+  }
+  .service .flex-elements-2:nth-child(odd), .jobs .flex-elements-2:nth-child(odd) {
+    border-right: 3px solid #3eba9d;
+  }
+  .service .flex-elements-2:nth-child(even), .jobs .flex-elements-2:nth-child(even) {
+    border-left: 3px solid #3eba9d;
+  }
+}
 /* Media query pour petits écrans */
 @media (max-width: 768px) {
   .footer-container {
@@ -510,6 +522,9 @@ footer .copyright {
   }
   .flex-elements-4 {
     width: 100%;
+  }
+  .flex-elements-3 {
+    width: 98%;
   }
   .town_hall .flex-elements-2 {
     width: 98%;
