@@ -54,7 +54,7 @@ All the font needed by fontawesome-all.min.css file.
 - Numbers  
 
 ## ToDo Pages  
-- Church  
+- History  
 - Activities  
 - Contact (?)  
 
