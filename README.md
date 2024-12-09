@@ -48,10 +48,10 @@ All the font needed by fontawesome-all.min.css file.
 - Index  
 - News  
 - Services  
-
-## ToDo Pages  
 - Visits  
 - Jobs enlistments  
+
+## ToDo Pages  
 - Church  
 - Town Hall  
 - Activities  
