@@ -96,6 +96,29 @@ p {
   margin-right: 2%;
 }
 
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  width: 75%;
+  padding: 0.5em;
+}
+
+th {
+  border-right: 3px solid #f36e7f;
+}
+
+tr:nth-child(odd) {
+  background-color: #b0f0e1;
+}
+
+tr:nth-child(even) {
+  background-color: #fac2ca;
+}
+
 main {
   width: 100%;
   height: auto;
@@ -306,7 +329,7 @@ section.prod {
 }
 
 .flex-elements-2 {
-  width: 49%;
+  width: 45%;
   display: flex;
   min-height: max-content;
   justify-content: center;
@@ -333,11 +356,14 @@ section.prod {
   color: #a442ff;
 }
 
-.service .flex-elements-2 {
+.service .flex-elements-2, .jobs .flex-elements-2 {
+  border-top: 3px solid #3eba9d;
   border-bottom: 3px solid #3eba9d;
+  padding: 0.5em;
 }
-.service .flex-elements-2:nth-child(odd) {
+.service .flex-elements-2:nth-child(odd), .jobs .flex-elements-2:nth-child(odd) {
   border-right: 3px solid #3eba9d;
+  padding: 0.5em;
 }
 
 .visits .flex-elements-2 {
@@ -351,17 +377,20 @@ section.prod {
   .flex-elements-2 {
     width: 100%;
   }
-  .service .flex-elements-2 {
+  .service .flex-elements-2, .jobs .flex-elements-2 {
     display: flow-root;
     border-bottom: 3px solid #3eba9d;
   }
-  .service .flex-elements-2:last-child {
+  .service .flex-elements-2:last-child, .jobs .flex-elements-2:last-child {
     border-bottom: none;
   }
-  .service .flex-elements-2:nth-child(odd) {
+  .service .flex-elements-2:first-child, .jobs .flex-elements-2:first-child {
+    border-top: none;
+  }
+  .service .flex-elements-2:nth-child(odd), .jobs .flex-elements-2:nth-child(odd) {
     border-right: 3px solid #3eba9d;
   }
-  .service .flex-elements-2:nth-child(even) {
+  .service .flex-elements-2:nth-child(even), .jobs .flex-elements-2:nth-child(even) {
     border-left: 3px solid #3eba9d;
   }
 }

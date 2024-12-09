@@ -25,6 +25,27 @@ p {
     margin-right: 2%;
 }
 
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    //border: 3px solid $btnText;
+}
+td {
+    width: 75%;
+    padding: 0.5em;
+}
+th {
+    border-right: 3px solid $rosel;
+}
+tr:nth-child(odd) {
+    background-color: $light;
+}
+tr:nth-child(even) {
+    background-color: $rosepastel;
+}
+
+
 main {
     width: 100%;
     height: auto;
@@ -244,7 +265,7 @@ section.prod {
 }
 
 .flex-elements-2 {
-    width: 49%;
+    width: 45%;
     display: flex;
     min-height: max-content;
     justify-content: center;
@@ -270,10 +291,13 @@ section.prod {
         color: $btnText;
     }
 }
-.service .flex-elements-2 {
+.service .flex-elements-2, .jobs .flex-elements-2 {
+    border-top: 3px solid $turquoise;
     border-bottom: 3px solid $turquoise;
+    padding: 0.5em;
     &:nth-child(odd) {
         border-right: 3px solid $turquoise;
+        padding: 0.5em;
     }
 }
 .visits  .flex-elements-2 {
@@ -288,11 +312,14 @@ section.prod {
     .flex-elements-2 { 
         width: 100%;
     }
-    .service .flex-elements-2 {
+    .service .flex-elements-2, .jobs .flex-elements-2 {
         display: flow-root;
         border-bottom: 3px solid $turquoise;
         &:last-child {
             border-bottom: none;
+        }
+        &:first-child {
+            border-top: none;
         }
         &:nth-child(odd) {
             border-right: 3px solid $turquoise;
