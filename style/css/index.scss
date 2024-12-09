@@ -215,6 +215,10 @@ section.prod {
     padding: 0;
     text-decoration: underline;
 }
+.titre h1 {
+    font-size: 1.3em;
+    color: $turquoise;
+}
 
 .centre {
     padding: 1em;
@@ -303,6 +307,7 @@ section.prod {
 .town_hall ul {
     display: flex;
     justify-content: space-evenly;
+    font-size: 1.5em;
     li {
         min-width: 5em;
     }
@@ -464,6 +469,9 @@ footer {
     .img_phone_show img {
         display: flex;
     }
+    .town_hall ul {
+        flex-direction: column;
+    }
     article {
         position: absolute;
         top: -15em;
@@ -477,5 +485,7 @@ footer {
             margin-bottom: 0.5em;
         }
     }
-
+    .fa-mouse-pointer:before {
+        content:"\f25a"
+    }
 }

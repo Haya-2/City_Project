@@ -283,6 +283,11 @@ section.prod {
   text-decoration: underline;
 }
 
+.titre h1 {
+  font-size: 1.3em;
+  color: #3eba9d;
+}
+
 .centre {
   padding: 1em;
   display: flex;
@@ -369,6 +374,7 @@ section.prod {
 .town_hall ul {
   display: flex;
   justify-content: space-evenly;
+  font-size: 1.5em;
 }
 .town_hall ul li {
   min-width: 5em;
@@ -516,6 +522,9 @@ footer .copyright {
   .img_phone_show img {
     display: flex;
   }
+  .town_hall ul {
+    flex-direction: column;
+  }
   article {
     position: absolute;
     top: -15em;
@@ -528,6 +537,9 @@ footer .copyright {
   }
   footer .icons li {
     margin-bottom: 0.5em;
+  }
+  .fa-mouse-pointer:before {
+    content: "\f25a";
   }
 }
 
