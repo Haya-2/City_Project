@@ -348,6 +348,12 @@ section.prod {
 .flex-elements-3 h1 {
   text-align: center;
 }
+.flex-elements-3 img {
+  cursor: default;
+  max-height: 20em;
+  max-width: 100%;
+  width: fit-content;
+}
 
 .flex-elements-2 {
   width: 45%;
