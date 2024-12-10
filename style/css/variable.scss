@@ -26,12 +26,22 @@ $fond: #c7f1ed8c;
     src: url(Afterglow_Regular.ttf) format("truetype");
 }
 
+#contact-form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+}
+
 .inputGroup {
     margin: 1.1em 0 0.5em 0;
     position: relative;
 }
+.inputForm {
+    padding: 0.2em;
+}
 
-.inputGroup input, textarea {
+.inputGroup input, .inputForm input, select, textarea {
     font-size: 100%;
     padding: 0.5em;
     padding-left: 1em;
@@ -39,12 +49,25 @@ $fond: #c7f1ed8c;
     border: 2px solid $rosel;
     background-color: transparent;
     border-radius: 20px;
+    resize: vertical;
     &:hover {
         border-color: $rosepastel;
     }
     &:focus {
         border-color: $rouge;
     }
+}
+.inputForm input, .inputForm select, .inputForm textarea {
+    width: -webkit-fill-available;
+    background-color: #FFFFFF;
+    &:valid {
+        border-color: $turquoise;
+    }
+    resize: vertical;
+}
+
+.inputForm label {
+    color: $rosemid;
 }
 
 .inputGroup label {

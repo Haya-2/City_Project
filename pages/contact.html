@@ -69,6 +69,61 @@
             </article>
 
             <section class="prod">
+                
+                <span class="titre">
+                    <h2><i class="fas fa-paper-plane"></i> Contact Us </h2>
+                </span>
+
+                    <div class="flex-elements-1">
+                        <h1 class="icon"><i class="fas fa-at"></i> FORMULAIRE DE CONTACT</h1>
+                        <form id="contact-form">
+                            <!-- Field 1: How you want to contact -->
+                            <div class="inputForm">
+                                <label for="contact-person">Who do you want to contact us?</label>
+                                <select name="contact-person" id="contact-person" required>
+                                    <option value="" disabled selected>Select your contacter </option>
+                                    <option value="1">WebSite Owner</option>
+                                    <option value="2">City Humain Ressources</option>
+                                    <option value="3">Secretary</option>
+                                </select>
+                            </div>
+                        
+                            <!-- Field 2: Name -->
+                            <div class="inputForm">
+                                <label for="name">Name</label>
+                                <div class="underline"></div>
+                                <input type="text" name="name" id="name" placeholder="Your name..." required>
+                            </div>
+                        
+                            <!-- Field 3: Surname -->
+                            <div class="inputForm">
+                                <label for="surname">Surname</label>
+                                <div class="underline"></div>
+                                <input type="text" name="surname" id="surname" placeholder="Your surname..." required>
+                            </div>
+                        
+                            <!-- Field 4: Email Address -->
+                            <div class="inputForm">
+                                <label for="email">Email Address</label>
+                                <div class="underline"></div>
+                                <input type="email" name="email" id="email" placeholder="Your email address..." required>
+                            </div>
+                        
+                            <!-- Field 5: Message -->
+                            <div class="inputForm">
+                                <label for="message">Message</label>
+                                <div class="underline"></div>
+                                <textarea name="message" id="message" placeholder="Write your message..." rows="5" required></textarea>
+                            </div>
+                        
+                            <!-- Submit Button -->
+                            <div>
+                                <button type="submit" class="btn icon">Send Message</button>
+                            </div>
+                        </form>
+                        
+                    </div>
+
             </section>
         </div>
     </main>
@@ -103,18 +158,18 @@
                 <form>
                     <div>
                         <div class="inputGroup">
-                            <input type="text" name="name" id="name" placeholder="Name..." />
+                            <input type="text" name="name" id="" placeholder="Name..." />
                             <label for="name">Name</label>
                         </div>
                         <div class="inputGroup">
-                            <input type="email" name="email" id="email" placeholder="E-mail..." />
+                            <input type="email" name="email" id="" placeholder="E-mail..." />
                             <label for="name">E-mail</label>
                         </div>
                         <div>
-                            <textarea name="message" id="message" placeholder="This fonctionnality isn't working ..." rows="3"></textarea>
+                            <textarea name="message" id="" placeholder="This fonctionnality isn't working ..." rows="3"></textarea>
                         </div>
-                        <div>
-                            <input type="submit" class="button btn alt" value="Send Message" />
+                        <div style="display: flex; justify-content: center;"> 
+                            <input type="submit" class="button btn alt" value="Send our Message" />
                         </div>
                     </div>
                 </form>

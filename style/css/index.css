@@ -12,12 +12,23 @@
   font-family: "Afterglow";
   src: url(Afterglow_Regular.ttf) format("truetype");
 }
+#contact-form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
 .inputGroup {
   margin: 1.1em 0 0.5em 0;
   position: relative;
 }
 
-.inputGroup input, textarea {
+.inputForm {
+  padding: 0.2em;
+}
+
+.inputGroup input, .inputForm input, select, textarea {
   font-size: 100%;
   padding: 0.5em;
   padding-left: 1em;
@@ -25,12 +36,26 @@
   border: 2px solid #f36e7f;
   background-color: transparent;
   border-radius: 20px;
+  resize: vertical;
 }
-.inputGroup input:hover, textarea:hover {
+.inputGroup input:hover, .inputForm input:hover, select:hover, textarea:hover {
   border-color: #fac2ca;
 }
-.inputGroup input:focus, textarea:focus {
+.inputGroup input:focus, .inputForm input:focus, select:focus, textarea:focus {
   border-color: #ff2643;
+}
+
+.inputForm input, .inputForm select, .inputForm textarea {
+  width: -webkit-fill-available;
+  background-color: #FFFFFF;
+  resize: vertical;
+}
+.inputForm input:valid, .inputForm select:valid, .inputForm textarea:valid {
+  border-color: #3eba9d;
+}
+
+.inputForm label {
+  color: #f14e64;
 }
 
 .inputGroup label {

@@ -53,10 +53,10 @@ All the font needed by fontawesome-all.min.css file.
 - Town Hall  
 - Numbers  
 - History  
+- Contact (both)  
 
 ## ToDo Pages  
 - Activities  
-- Contact (?)  
 
 
 ## Future Enhancements
