@@ -52,7 +52,10 @@ All the font and svg needed by fontawesome-all.min.css file.
 - Activities  
 - Contact (both)  
 
-## Future Enhancements
-Better color palette
+## Future Enhancements  
+Better color palette  
+
+## Link to GitHub  
+https://github.com/Haya-2/City_Project 
 
 Author : Aline (Haya-2)
