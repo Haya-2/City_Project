@@ -1,12 +1,14 @@
+/* Menu Burger activating and desactivating */
 document.addEventListener("DOMContentLoaded", () => {
     const burgerMenu = document.getElementById("burger-menu");
-    const navbar = document.querySelector(".navbarbis");
+    const navbar = document.querySelector(".navbarburger");
 
     burgerMenu.addEventListener("click", () => {
         navbar.classList.toggle("active");
     });
 });
 
+/* Links in TownHall page. To navigate to inside anchor élément */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();

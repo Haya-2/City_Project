@@ -114,7 +114,7 @@ nav {
     float: none;
     justify-content: space-between;
 }
-.navbarbis {
+.navbarburger {
     position: relative;
     display: none;
 }
@@ -496,7 +496,7 @@ footer {
     .navbar {
         display: none;
     }
-    .navbarbis {
+    .navbarburger {
         display: none;
         flex-direction: column;
         top: -0.8em;
@@ -514,7 +514,7 @@ footer {
     .liennav {
         margin: 0;
     }
-    .navbarbis.active {
+    .navbarburger.active {
         display: flex; 
         animation: slideIn 0.3s cubic-bezier(0, 0.5, 0.1, 1);
     }

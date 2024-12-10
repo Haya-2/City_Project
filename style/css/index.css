@@ -212,7 +212,7 @@ nav img {
   justify-content: space-between;
 }
 
-.navbarbis {
+.navbarburger {
   position: relative;
   display: none;
 }
@@ -572,7 +572,7 @@ footer .copyright {
   .navbar {
     display: none;
   }
-  .navbarbis {
+  .navbarburger {
     display: none;
     flex-direction: column;
     top: -0.8em;
@@ -581,7 +581,7 @@ footer .copyright {
     background: #f14e64;
     box-shadow: 0 2px 0px rgba(62, 186, 157, 0.5);
   }
-  .navbarbis li {
+  .navbarburger li {
     width: 100%;
     margin: 0;
     padding: 1em 0;
@@ -590,7 +590,7 @@ footer .copyright {
   .liennav {
     margin: 0;
   }
-  .navbarbis.active {
+  .navbarburger.active {
     display: flex;
     animation: slideIn 0.3s cubic-bezier(0, 0.5, 0.1, 1);
   }
