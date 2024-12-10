@@ -30,7 +30,6 @@ All the page (except index.html) of the web projet
 
 ### Folder style  
 - Folder css  
-- Folder fonts  
 - Folder webfonts  
 - index.js, the only JavaScript document I use. I could have put him in a separeted folder but I didn't.
 
@@ -38,11 +37,8 @@ All the page (except index.html) of the web projet
 All the CSS and SCSS files, and the map (scss to css file).  
 fontawesome-all.min.css is the file of icon without images.
 
-#### Folder fonts  
-Empty
-
 #### Folder webfonts  
-All the font needed by fontawesome-all.min.css file.
+All the font and svg needed by fontawesome-all.min.css file.
 
 ## Finished Pages  
 - Index  
@@ -53,13 +49,10 @@ All the font needed by fontawesome-all.min.css file.
 - Town Hall  
 - Numbers  
 - History  
+- Activities  
 - Contact (both)  
 
-## ToDo Pages  
-- Activities  
-
-
 ## Future Enhancements
-All the "PAGES/" visual and data.
+Better color palette
 
 Author : Aline (Haya-2)
